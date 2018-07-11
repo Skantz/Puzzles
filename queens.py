@@ -1,5 +1,3 @@
-import sys
-
 queens_n = int(input())
 
 queens_pos = []
