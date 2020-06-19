@@ -1,2 +1,3 @@
 # Kattis
-open.kattis.com
+
+Solutions to Kattis puzzles (open.kattis.com)
