@@ -21,4 +21,5 @@ let rec loop n i sum =
     | true -> (loop (n + 1) (i + 1) (sum + n))
     | false -> loop (n + 1) i sum
 
- let main = Stdlib.print_int (loop 2 0 0)
+let main = Stdlib.print_int (loop 2 0 0)
+ 

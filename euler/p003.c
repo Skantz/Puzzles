@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <math.h>
 
@@ -24,3 +23,4 @@ int main() {
     printf("%lld", maxv);
     return 0;
 }
+

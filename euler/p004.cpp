@@ -25,4 +25,3 @@ int main() {
   std::cout << maxv;
   return 0;
 }
-
