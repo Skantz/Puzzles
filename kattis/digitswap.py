@@ -1,2 +1,1 @@
-m = input().strip()
-print(m[::-1])
+print(input().strip()[::-1])
