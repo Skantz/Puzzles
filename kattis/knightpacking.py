@@ -1,6 +1,1 @@
-n = int(input())
-if (n % 2) == 0:
-  print("second")
-else:
-  print("first")
-
+print("second") if int(input()) % 2 == 0 else print("first")
