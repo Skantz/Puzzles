@@ -1,2 +1,1 @@
-m = input().strip()
-print((m + " ")*2 + m)
+(lambda x : print((x + " ")*2 + x))(input().strip())
