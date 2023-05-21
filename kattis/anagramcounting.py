@@ -3,7 +3,6 @@ from math import factorial
 from functools import reduce 
 import operator
 
-
 def anagram_count(string):
   characters = list(string)
   uniques = {c: 1 for c in characters}
