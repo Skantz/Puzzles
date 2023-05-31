@@ -7,7 +7,7 @@ class Solution:
         return left.val == right.val \
           and self.isSymmetric_(left.left, right.right) \
           and self.isSymmetric_(left.right, right.left)
-          
+
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
         if not root:
             return True
