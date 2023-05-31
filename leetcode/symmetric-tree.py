@@ -1,10 +1,8 @@
 class Solution:
     def isSymmetric_(self, left, right) -> bool:
         l, r = left == None, right == None
-        if l ^ r:
-            return False
-        if l and r:
-            return True
+        if l or r:
+            return l == r
         return left.val == right.val \
           and self.isSymmetric_(left.left, right.right) \
           and self.isSymmetric_(left.right, right.left)
