@@ -1,5 +1,1 @@
-inp = input().strip()
-if inp.count("A") > inp.count("B"):
-    print("A")
-else:
-    print("B")
+(lambda x: print("A") if x.count("A") > x.count("B") else print("B"))(input().strip())
