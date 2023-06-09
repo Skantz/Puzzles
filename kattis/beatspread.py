@@ -4,4 +4,4 @@ for _ in range(n):
     if x < y or (x + y) % 2:
         print("impossible")
         continue
-    print((x + y)//2, x  - (x + y)//2)
+    print((x + y)//2, x - (x + y)//2)
