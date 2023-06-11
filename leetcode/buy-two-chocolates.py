@@ -3,7 +3,6 @@ class Solution:
         a = min(prices)
         prices.remove(a)
         b = min(prices)
-        sum_ = a + b
-        if sum_ > money:
-            return (money)
-        return money - sum_
+        if a + b > money:
+            return money
+        return money - a - b
