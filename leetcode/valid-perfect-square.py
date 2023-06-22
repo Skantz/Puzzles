@@ -3,6 +3,6 @@ class Solution:
         if num == 0:
             return 0
         xnum = num/2
-        for _ in range(20):
+        for _ in range(ceil(math.log2(num) +1)):
             xnum = 0.5 * (xnum  + num / xnum)
         return round(xnum)*round(xnum) == num
