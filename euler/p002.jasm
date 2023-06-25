@@ -1,0 +1,72 @@
+class p002 {
+    // <no signature>
+    // <no exceptions>
+    <init>()V {
+        
+        label0:
+        aload 0
+        invokespecial java/lang/Object.<init>()V
+        return
+    }
+
+
+    // <no signature>
+    // <no exceptions>
+    public static main([java/lang/String)V {
+        
+        label0:
+        iconst 1
+        istore 1
+        
+        label1:
+        iconst 1
+        istore 2
+        
+        label2:
+        iconst 0
+        istore 3
+        
+        label3:
+        iload 2
+        ldc 4000000
+        if_icmpgt label4
+        
+        label5:
+        iload 2
+        iconst 2
+        irem
+        ifne label6
+        
+        label7:
+        iload 3
+        iload 2
+        iadd
+        istore 3
+        
+        label6:
+        iload 2
+        istore 4
+        
+        label8:
+        iload 1
+        iload 2
+        iadd
+        istore 2
+        
+        label9:
+        iload 4
+        istore 1
+        
+        label10:
+        goto label3
+        
+        label4:
+        getstatic java/lang/System.out java/io/PrintStream
+        iload 3
+        invokevirtual java/io/PrintStream.println(I)V
+        
+        label11:
+        return
+    }
+
+}
