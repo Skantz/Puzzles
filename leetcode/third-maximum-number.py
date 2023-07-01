@@ -4,4 +4,4 @@ class Solution:
         l = sorted(list(s))
         if len(l) < 3:
             return l[-1]
-        return l [-3]
+        return l[-3]

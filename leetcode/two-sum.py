@@ -5,6 +5,7 @@ class NaiveSolution:
                 if ((i != j) and (n + m == target)):
                     return [i, j]
 
+
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         inverse_and_index = {}

@@ -6,5 +6,6 @@ class Solution:
             return root.val
         return self.sumOfLeftLeaves_(root.left, True) \
           + self.sumOfLeftLeaves_(root.right, False)
+
     def sumOfLeftLeaves(self, root: Optional[TreeNode]) -> int:
         return self.sumOfLeftLeaves_(root, False)

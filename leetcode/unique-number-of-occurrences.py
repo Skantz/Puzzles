@@ -5,4 +5,4 @@ class Solution:
             mapp[v] = 0
         for v in arr:
             mapp[v] += 1
-        return sorted(list(mapp.values())) == sorted(list(set(mapp.values()))) 
+        return sorted(list(mapp.values())) == sorted(list(set(mapp.values())))

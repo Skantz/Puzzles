@@ -4,5 +4,5 @@ class Solution:
             return 0
         xa = x/2
         for _ in range(20):
-            xa = 0.5 * (xa  + x / xa)
+            xa = 0.5 * (xa + x / xa)
         return int(xa)
