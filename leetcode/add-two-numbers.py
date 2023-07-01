@@ -17,5 +17,5 @@ class Solution:
         if l2:
             return ListNode(s, self.addTwoNumbers_(None, l2.next, carry))
         if s != 0:
-           return ListNode(s, None)
+            return ListNode(s, None)
         return None

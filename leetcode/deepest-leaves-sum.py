@@ -15,5 +15,4 @@ class Solution:
             return 0
         if depth == 1:
             return root.val
-        else:
-            return sum(self.deepestLeaveSumPrime(root, 1, depth))
+        return sum(self.deepestLeaveSumPrime(root, 1, depth))

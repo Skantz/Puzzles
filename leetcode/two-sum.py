@@ -13,7 +13,7 @@ class Solution:
             inverse_and_index[n] = i
         for (i, n) in enumerate(nums):
             try:
-                idx, m = inverse_and_index[target - n], target - n
+                idx = inverse_and_index[target - n]
                 if idx != i:
                     return [i, idx]
             except KeyError:
