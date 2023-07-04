@@ -5,5 +5,5 @@ class Solution:
         mapp = {"--X":dec, "X--":dec, "++X":inc, "X++":inc}
         X = 0
         for e in operations:
-            X = mapp[e](X)
+            X = mapp[e](X) #X + (1 if e[1] == "+" else -1)
         return X
