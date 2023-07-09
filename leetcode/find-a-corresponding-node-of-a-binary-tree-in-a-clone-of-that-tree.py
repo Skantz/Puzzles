@@ -6,8 +6,4 @@ class Solution:
         if original == target:
             return cloned
         left = self.getTargetCopy(original.left, cloned.left, target)
-        if left:
-            return left
-        right = self.getTargetCopy(original.right, cloned.right, target)
-        return right
-
+        return left if left else self.getTargetCopy(original.right, cloned.right, target)
