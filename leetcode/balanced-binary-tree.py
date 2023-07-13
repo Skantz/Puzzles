@@ -7,4 +7,4 @@ class Solution:
         if not root:
             return True
         return abs(self.depth(root.left) - self.depth(root.right)) <= 1 \
-          and self.isBalanced(root.left)  and self.isBalanced(root.right)
+          and self.isBalanced(root.left) and self.isBalanced(root.right)
