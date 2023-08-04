@@ -1,7 +1,7 @@
 class Solution:
     def isSymmetric_(self, left, right) -> bool:
-        if not l or not r:
-            return l == r
+        if not left or not right:
+            return left == right
         return left.val == right.val \
           and self.isSymmetric_(left.left, right.right) \
           and self.isSymmetric_(left.right, right.left)
