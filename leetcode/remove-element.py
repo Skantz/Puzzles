@@ -6,4 +6,4 @@ class Solution:
                 c += 1
             else:
                 nums[i - c] = nums[i]
-        return (len(nums) - c)
+        return len(nums) - c
