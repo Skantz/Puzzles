@@ -1,6 +1,6 @@
 class Foo:
     def __init__(self):
-        first, second = False, False
+        pass
 
     def first(self, printFirst: 'Callable[[], None]') -> None:
         printFirst()

@@ -21,7 +21,6 @@ class Solution:
                 fst.append(num[i + 1])
             return "".join(fst)
         ns = [int(e) for e in num]
-        fst = ns[0]
         n = len(ns)
         rets = []
         for fgh in product([f, g, h, q], repeat = n - 1):
