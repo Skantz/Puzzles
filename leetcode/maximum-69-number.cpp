@@ -11,7 +11,7 @@ public:
             i++;
         }
         int ret;
-        std::from_chars(s.data(), s.data()+s.size(), ret);
+        std::from_chars(s.data(), s.data() + s.size(), ret);
         return ret;
     }
 };
