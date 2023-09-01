@@ -1,6 +1,5 @@
 class Solution:
     def rand10(self):
-        l = False
         i = rand7()
         while i > 6:
             i = rand7()
