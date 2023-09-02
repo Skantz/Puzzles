@@ -3,6 +3,7 @@ class Solution:
         assert root
         s = list([root])
         bl = root.val
+        z = []
         while s or z:
             if not s:
                 s = z[:]
