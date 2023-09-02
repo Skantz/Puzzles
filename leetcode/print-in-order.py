@@ -1,4 +1,4 @@
-# pylint: disable=method-hidden
+# pylint: disable=method-hidden,not-callable
 
 class Foo:
     def __init__(self):

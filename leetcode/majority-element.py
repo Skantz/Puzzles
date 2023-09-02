@@ -7,4 +7,4 @@ class Solution:
             except KeyError:
                 mapp[n] = 1
         maxx = max(mapp.values())
-        return next(k for k in mapp if mapp[k] == maxx)
+        return next(k for (k, e) in mapp.items() if e == maxx)
