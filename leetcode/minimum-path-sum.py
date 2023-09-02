@@ -14,7 +14,6 @@ class Solution:
                     costgrid[i][j] = costgrid[i][j - 1] + add
                 elif j == 0:
                     costgrid[i][j] = costgrid[i - 1][j] + add
-                else: 
+                else:
                     costgrid[i][j] = min(costgrid[i - 1][j], costgrid[i][j - 1]) + add
         return costgrid[-1][-1]
-

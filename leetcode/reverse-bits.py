@@ -6,4 +6,4 @@ class Solution:
             if (n & 1) == 1:
                 m = m | 1
             n = n >> 1
-        return m 
+        return m

@@ -9,4 +9,3 @@ class Solution:
             return True
         s.add(head)
         return self.hasCycle_(head.next, s)
- 
