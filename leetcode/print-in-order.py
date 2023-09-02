@@ -2,7 +2,7 @@
 
 class Foo:
     def __init__(self):
-        pass 
+        pass
 
     def first(self, printFirst: 'Callable[[], None]') -> None:
         printFirst()
