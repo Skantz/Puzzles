@@ -21,6 +21,6 @@ class Solution:
                 if e.right:
                     z.append(e.right)
             odd = False if odd else True
-            s = [e for e in z]
+            s = z[:]
             z = []
         return True

@@ -7,7 +7,7 @@ class Solution:
         ret = [[]]
         while s or z:
             if not s:
-                s = [e for e in z]
+                s = z[:]
                 z = []
                 ret.append([])
             a = s.pop(0)

@@ -5,7 +5,7 @@ class Solution:
         bl = root.val
         while s or z:
             if not s:
-                s = [e for e in z]
+                s = z[:]
             bl = s[0].val
             z = []
             for e in s:
