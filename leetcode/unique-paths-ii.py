@@ -4,7 +4,6 @@ class Solution:
             return 0
         n = len(obstacle_grid)
         m = len(obstacle_grid[0])
-        # TODO remove 2 extra cases?
         if m == 1:
             return 1 if all(e == [0] for e in obstacle_grid) else 0
         if n == 1:
