@@ -2,7 +2,7 @@ class Solution:
     def minAbsoluteSumDiff(self, nums1: List[int], nums2: List[int]) -> int:
         min_ = sum(abs(nums1[i] - nums2[i]) for i in range(len(nums1)))
         maxx = 0
-        for i in range(len(nums1)):
+        for i, _ in enumerate(nums1):
             z = abs(nums1[i] - nums2[i])
             if z < maxx:
                 continue

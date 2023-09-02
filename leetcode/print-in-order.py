@@ -9,7 +9,7 @@ class Foo:
         self.first = True
 
     def second(self, printSecond: 'Callable[[], None]') -> None:
-        if self.first == True:
+        if self.first is True:
             printSecond()
             self.second = True
         else:
@@ -18,7 +18,7 @@ class Foo:
             return self.second(printSecond)
 
     def third(self, printThird: 'Callable[[], None]') -> None:
-        if self.second == True:
+        if self.second is True:
             printThird()
         else:
             for _ in range(100):

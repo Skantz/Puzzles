@@ -5,7 +5,7 @@ class Solution:
         c = 0
         cs = [-1 for _ in range(len(A))]
         assert len(A) == len(B)
-        for i in range(len(A)):
+        for i, _ in enumerate(A):
             if A[i] not in a:
                 if A[i] in b or A[i] == B[i]:
                     c += 1
