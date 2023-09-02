@@ -6,4 +6,4 @@ class Solution:
                 kv["".join(sorted(s))] += [s]
             except KeyError:
                 kv["".join(sorted(s))] = [s]
-        return [kv[e] for e in kv]
+        return kv.values()
