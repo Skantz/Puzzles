@@ -6,7 +6,8 @@ class NaiveSolution:
     def pick(self, target: int) -> int:
         n = self.nums.count(target)
         m = randint(0, n - 1)
-        return [i for i, n in enumerate(self.nums) if (n == target)][m]
+        return [i for i, n in enumerate(self.nums) if n == target][m]
+
 class Solution:
     from random import randint
     def __init__(self, nums: List[int]):

@@ -1,6 +1,6 @@
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        assert(root)
+        assert root
         if q.val < p.val:
             p, q = q, p
         if root.val == p.val:

@@ -24,4 +24,4 @@ class ParkingSystem:
                 return True
             else:
                 return False
-        assert(False)
+        assert False

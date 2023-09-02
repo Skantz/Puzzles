@@ -5,7 +5,7 @@ class Solution:
         ub = n
         while True:
             g = randint(lb, ub)
-            ans   = guess(g)
+            ans = guess(g)
             if ans == 0:
                 return g
             elif ans < 0:
@@ -13,4 +13,4 @@ class Solution:
             elif ans > 0:
                 lb = g
             else:
-                assert(False)
+                assert False

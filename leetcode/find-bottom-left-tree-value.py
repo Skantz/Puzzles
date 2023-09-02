@@ -1,6 +1,6 @@
 class Solution:
     def findBottomLeftValue(self, root: Optional[TreeNode]) -> int:
-        assert(root)
+        assert root
         s = list([root])
         bl = root.val
         while s or z:

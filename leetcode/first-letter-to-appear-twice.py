@@ -5,4 +5,4 @@ class Solution:
             if e in mapp:
                 return e
             mapp.add(e)
-        assert(False)
+        assert False

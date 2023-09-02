@@ -9,7 +9,7 @@ class Solution:
             return 1
         s = 0
         for i in range(1, k + 1):
-            if ((n - 1, k, target - i)) in self.mems:
+            if (n - 1, k, target - i) in self.mems:
                 e = self.mems[(n - 1, k, target - i)]
             else:
                 e = self.numRollsToTarget(n - 1, k, target - i)
