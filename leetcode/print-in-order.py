@@ -1,25 +1,23 @@
 class Foo:
     def __init__(self):
-        pass
+        first, second = False, False
 
     def first(self, printFirst: 'Callable[[], None]') -> None:
         printFirst()
         self.first = True
 
     def second(self, printSecond: 'Callable[[], None]') -> None:
-        if self.first:
+        if self.first == True:
             printSecond()
             self.second = True
-            return None
         else:
             for _ in range(100):
                 pass
             return self.second(printSecond)
 
     def third(self, printThird: 'Callable[[], None]') -> None:
-        if self.second:
+        if self.second == True:
             printThird()
-            return None
         else:
             for _ in range(100):
                 pass
