@@ -3,3 +3,5 @@ class Solution:
         for i, e in enumerate(sorted(t)):
             if i >= len(s) or sorted(s)[i] != e:
                 return e
+        assert False
+        return ""

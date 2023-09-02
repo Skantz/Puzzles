@@ -4,6 +4,8 @@ class NaiveSolution:
             for (j, m) in enumerate(nums):
                 if ((i != j) and (n + m == target)):
                     return [i, j]
+        assert False
+        return [-1, -1]
 
 
 class Solution:
@@ -19,3 +21,5 @@ class Solution:
                     return [i, idx]
             except KeyError:
                 continue
+        assert False
+        return [-1, -1]

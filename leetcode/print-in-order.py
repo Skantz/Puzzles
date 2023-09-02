@@ -10,6 +10,7 @@ class Foo:
         if self.first:
             printSecond()
             self.second = True
+            return None
         else:
             for _ in range(100):
                 pass
@@ -18,6 +19,7 @@ class Foo:
     def third(self, printThird: 'Callable[[], None]') -> None:
         if self.second:
             printThird()
+            return None
         else:
             for _ in range(100):
                 pass
