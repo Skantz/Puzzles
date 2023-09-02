@@ -1,3 +1,5 @@
+# pylint: disable=method-hidden
+
 class Foo:
     def __init__(self):
         pass 
