@@ -5,7 +5,6 @@ class Solution:
         saved_head = head
         while head.next:
             nxt = head.next
-            nxtnxt = nxt.next
             gcd_ = gcd(head.val, head.next.val)
             head.next = ListNode(gcd_, nxt)
             head = nxt
