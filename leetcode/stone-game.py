@@ -1,4 +1,3 @@
-#pylint: disable=unused-argument
 class Solution:
-    def stoneGame(self, piles: List[int]) -> bool:
+    def stoneGame(self, _):
         return 1
