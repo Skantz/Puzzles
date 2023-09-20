@@ -3,13 +3,11 @@ class Solution:
         if not root:
             return []
         s = list([root])
-        bl = root.val
         z = []
         ret = []
         while s or z:
             if not s:
                 s = z[:]
-            bl = s[0].val
             z = []
             for e in s:
                 if e.left:

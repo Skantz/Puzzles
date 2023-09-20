@@ -1,5 +1,5 @@
 class Solution:
-    
+ 
     def gcd(self, n, m): #euclid
         return n if m < 1 else self.gcd(m, n % m)
 
