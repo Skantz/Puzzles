@@ -10,7 +10,7 @@ class Solution:
         while arr:
             try:
                 i = arr.index(2 * arr[0])
-            except:
+            except ValueError:
                 return False
             arr = (arr[1:i] + arr[i + 1:])
         return True
