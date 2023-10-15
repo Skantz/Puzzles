@@ -1,3 +1,3 @@
 class Solution:
-    def isStrictlyPalindromic(self, n: int) -> bool:
+    def isStrictlyPalindromic(self, _: int) -> bool:
         return False
