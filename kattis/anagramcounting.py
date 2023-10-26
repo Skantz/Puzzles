@@ -1,6 +1,6 @@
 from sys import stdin
 from math import factorial
-from functools import reduce 
+from functools import reduce
 import operator
 
 def anagram_count(string):

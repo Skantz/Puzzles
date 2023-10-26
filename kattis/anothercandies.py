@@ -1,5 +1,4 @@
 cases_n = int(input())
-
 for _ in range(cases_n):
   _ = input()
   n = int(input())
@@ -10,4 +9,3 @@ for _ in range(cases_n):
     print("YES")
   else:
     print("NO")
-

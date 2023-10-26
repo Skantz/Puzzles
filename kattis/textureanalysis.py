@@ -17,4 +17,3 @@ for line in sys.stdin:
   except:
     print(case, "EVEN")
   case += 1
-

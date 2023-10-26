@@ -16,10 +16,7 @@ def path_distance(path_list, n):
   p = path_list
   return sum([point_distance(p[i],p[i+1],n) for i in range(n-1)])
 
-"""
-print(path_distance([2,5,8,7,4,1,5,9,6,3],9))
-"""
-
+#print(path_distance([2,5,8,7,4,1,5,9,6,3],9))
 
 def solve_3x3():
   path_list = []

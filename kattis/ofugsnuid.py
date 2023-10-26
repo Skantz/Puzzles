@@ -5,4 +5,3 @@ for _ in range(n):
 l.reverse()
 for i in l:
     print(i)
-

@@ -1,4 +1,3 @@
-from generators import primes_up_to
 from search import bfs
 
 #very wasteful but it doesnt run
@@ -35,6 +34,4 @@ graph = {9719: [2719, 3719, 6719, 8719, 9319, 9419, 9619, 9739, 9749, 9769], 409
 test_cases = int(input())
 for _ in range(test_cases):
   inp = input().strip().split()
-  print( len(bfs(graph, int(inp[0]), int(inp[1])))-1)
-
-
+  print(len(bfs(graph, int(inp[0]), int(inp[1]))) - 1)

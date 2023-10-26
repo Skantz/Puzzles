@@ -8,7 +8,7 @@ for _ in range(n):
   seq2 = deepcopy(seq)
   seq2.sort()
   seq3 = deepcopy(seq)
-  seq3.sort()          
+  seq3.sort()
   seq3.reverse()
   if seq == seq2 or seq == seq3:
     possible_arithmetic = 1

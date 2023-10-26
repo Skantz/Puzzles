@@ -1,7 +1,7 @@
 #https://open.kattis.com/problems/parket
 
 import sys
-r, b = [int(e) if e.isdigit() for e in sys.stdin.readline().split()]
+r, b = [int(e) for e in sys.stdin.readline().split() if e.isdigit()]
 
 candidate_coordinates_for_r = []
 for i in range(0, r + 1):
