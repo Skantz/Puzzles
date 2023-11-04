@@ -5,5 +5,4 @@ class Solution:
         if root.val <= range[0] or range[1] <= root.val:
             return False
         c1 = self.isValidBST(root.left, (range[0], root.val))
-        c2 = self.isValidBST(root.right, (root.val, range[1]))
-        return c1 and c2
+        return c1 and self.isValidBST(root.right, (root.val, range[1]))
