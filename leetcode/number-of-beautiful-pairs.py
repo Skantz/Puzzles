@@ -1,7 +1,11 @@
 class Solution:
 
-    def gcd(self, n, m): #euclid
+    def gcd_(self, n, m): #euclid
         return n if m < 1 else self.gcd(m, n % m)
+
+    def gcd(self, *arg):
+        return -1 if len(arg) < 1 else arg[0] if len(arg) == 1 else self.gcd_(arg[0], arg[1]) if len(arg) == 2 else self.gcd_(arg[0], self.gcd(arg[1], arg[2:]))
+
 
     def countBeautifulPairs(self, nums: List[int]) -> int:
         fst = lambda n: int(str(n)[0])

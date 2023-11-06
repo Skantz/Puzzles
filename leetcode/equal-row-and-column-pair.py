@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution():
     def equalPairs(self, grid):
         n = len(grid)
         m = len(grid[0])

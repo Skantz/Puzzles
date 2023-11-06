@@ -5,7 +5,7 @@ class Solution:
         for i, e1 in enumerate(nums):
             for j, e2 in enumerate(nums):
                 for k, e3 in enumerate(nums):
-                    if i < j and j < k and e1 < e2 and e3 < e2:
+                    if i < j < k and e1 < e3 < e2:
                         b = True
                         minn = min(minn, e1 + e2 + e3)
         return minn if b else -1

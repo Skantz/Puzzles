@@ -5,7 +5,7 @@ class Solution:
                     100:"C", 400:"CD", 500:"D", 900:"CM",
                     1000:"M"}
         mapp = {mapp_rev[v]:v for v in mapp_rev}
-        roman = sorted([k for k in mapp], key=lambda k: (-len(k), -mapp[k]))
+        roman = sorted(list(mapp), key=lambda k: (-len(k), -mapp[k]))
         n = 0
         while s:
             for e in roman:

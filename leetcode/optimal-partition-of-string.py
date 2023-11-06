@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution:
     def partitionString(self, s):
         ret = [""]
         zet = set()

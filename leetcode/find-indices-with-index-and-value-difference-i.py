@@ -1,6 +1,6 @@
 class Solution:
     def findIndices(self, nums: List[int], indexDifference: int, valueDifference: int) -> List[int]:
-        for i in range(len(nums)):
+        for i, _ in enumerate(nums):
             for j in range(0, i - indexDifference):
                 if abs(nums[i] - nums[j]) + 1 > valueDifference:
                     return (i, j)
