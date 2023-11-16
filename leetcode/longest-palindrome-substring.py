@@ -2,7 +2,7 @@ class Solution:
     def is_palindrome(self, s : str) -> bool:
         n = len(s)
         for i in range(0, len(s)//2):
-            if (s[i] != s[n - i - 1]):
+            if s[i] != s[n - i - 1]:
                 return False
         return True
 
@@ -10,15 +10,14 @@ class Solution:
         odds = [(i, i) for i, _ in enumerate(s)]
         evens = [(i, i + 1) for i in range(len(s) - 1) if s[i] == s[i + 1]]
         i = 1
-        j = 2
         n = len(s)
         s_odds = []
         s_evens = []
         cont = True
         while cont:
             cont = False
-            s_odds = [e for e in odds]
-            s_evens = [e for e in evens]
+            s_odds = list(odds)
+            s_evens = list(evens)
             odds = []
             evens = []
             for (e1, e2) in s_odds:

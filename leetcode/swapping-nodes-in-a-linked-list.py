@@ -5,10 +5,10 @@ class Solution:
         if not head.next:
             return head
         if not head.next.next:
-                head.next.next = head
-                s = head.next
-                head.next = None
-                return s
+            head.next.next = head
+            s = head.next
+            head.next = None
+            return s
         save_head = head
         i = 1
         while i < k:
