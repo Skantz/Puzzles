@@ -25,7 +25,7 @@ class Solution:
             return ListNode(s, None)
         return None
 
-    def reverseList_(self, head: Optional[ListNode], prev : Optional[ListNode]) -> Optional[ListNode]:
+    def reverseList_(self, head: Optional[ListNode], prev: Optional[ListNode]) -> Optional[ListNode]:
         next_ = head.next
         head.next = prev
         if not next_:
