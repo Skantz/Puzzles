@@ -1,9 +1,11 @@
+from typing import List
+
+
 class Solution:
-    def minimumRightShifts(self, nums: List[int]) -> int:        
+    def minimumRightShifts(self, nums: List[int]) -> int:
         ret = sorted(nums)
         if nums == ret:
             return 0
-        save = list(nums)
         n = len(nums)
         for i in range(n):
             nums = [nums[(j - 1) % n] for j, _ in enumerate(nums)]

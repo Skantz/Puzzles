@@ -1,10 +1,11 @@
+from typing import List
+
+
 class Solution:
     def maxSatisfaction(self, satisfaction: List[int]) -> int:
         st = satisfaction
         st.sort()
-        partsums = []
         i = 0
-        s = 0
         removes = []
         while True:
             e = st[i]

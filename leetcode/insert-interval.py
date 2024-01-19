@@ -19,7 +19,7 @@ class Solution:
         if len(intervals) < 1:
             return [newInterval]
         comp = self.comp
-        if not any([comp(x, newInterval) for x in intervals]):
+        if not any(comp(x, newInterval) for x in intervals):
             return sorted(intervals + [newInterval])
         r = next((x for x in intervals if comp(x, newInterval)))
         i = intervals.index(r)

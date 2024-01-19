@@ -2,9 +2,9 @@ from typing import List, Optional
 
 
 class ListNode:
-    def __init__(self, v: int, next=None):
+    def __init__(self, v: int, nxt=None):
         self.val = v
-        self.next = next
+        self.nxt = nxt
 
 
 class Solution:
@@ -16,9 +16,9 @@ class Solution:
         if not list2:
             return list1
         if list1.val < list2.val:
-            list1.next = self.mergeTwoLists(list1.next, list2)
+            list1.nxt = self.mergeTwoLists(list1.nxt, list2)
             return list1
-        list2.next = self.mergeTwoLists(list1, list2.next)
+        list2.nxt = self.mergeTwoLists(list1, list2.nxt)
         return list2
 
     def mergeKLists(self,
