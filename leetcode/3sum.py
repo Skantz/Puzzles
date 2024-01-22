@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         dct = {}
@@ -15,3 +18,25 @@ class Solution:
                 if -s in dct and not all(e in [i, j] for e in dct[-s]):
                     trips.add(tuple(sorted([e1, e2, -s])))
         return list(trips)
+
+
+"""
+nums = [1, 1, 2, ..]
+dct  = [] -> [1 : [0]]
+    -> [1 : [0, 1]]
+    -> [1 : [0, 1], 2 : [2]] -> ..
+
+trips = {}
+
+[#, 1, 2, ..]
+[#, #, 2, ..]
+[#, #, #, ..]
+[#, .. .. # ]
+
+i = 0, j = 1
+-> tup := (1, 2)
+-> sum(tup) = 3
+-> -s = -3
+
+
+"""
