@@ -1,5 +1,4 @@
-double average(int* salary, int salarySize) {
-    int sz = salarySize;
+double average(int* salary, int sz) {
     int s = 0;
     int min_ = 1000000;
     int max_ = 1000;
