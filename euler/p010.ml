@@ -1,6 +1,6 @@
 let rec is_prime n i =
-    if n < 2 then false
-    if n <= 2 then true
+  if n < 2 then false
+  if n <= 2 then true
     else if i = 1 then true
     else
       match (n mod i = 0) with
