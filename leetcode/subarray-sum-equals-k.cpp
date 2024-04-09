@@ -14,8 +14,8 @@ public:
         }
         int ret = 0;
         /* improve : 1 pass */
-        for (unsigned int i = 0; i < runsum.size() + 1; i++) {
-            for (unsigned int j = i + 1; j < runsum.size() + 1; j++) {
+        for (unsigned int i = 0; i < runsum.size(); i++) {
+            for (unsigned int j = i + 1; j < runsum.size(); j++) {
                 if ((runsum[j] - runsum[i]) == k) {
                     ret++;
                 }
