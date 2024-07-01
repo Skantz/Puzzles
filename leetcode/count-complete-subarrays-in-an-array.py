@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def countCompleteSubarrays(self, nums: List[int]) -> int:
         allzet = set(nums)

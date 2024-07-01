@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def canReorderDoubled(self, arr: List[int]) -> bool:
         if not arr:

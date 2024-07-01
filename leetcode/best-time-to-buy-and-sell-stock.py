@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def maxProfitNaive(self, prices: List[int]) -> int:
         n = len(prices)

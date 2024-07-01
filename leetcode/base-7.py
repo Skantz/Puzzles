@@ -8,6 +8,6 @@ class Solution:
             num = - num
             s = - 1
         while num > 0:
-            out = out + str(num% 7)
+            out = out + str(num % 7)
             num = num // 7
         return out[::-1] if s > 0 else "-" + out[::-1]

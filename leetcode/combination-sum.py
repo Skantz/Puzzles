@@ -1,3 +1,6 @@
+from typing import List
+
+
 def no_dupe(list_of_list):
     return [list(e) for e in {tuple(sorted(e)) for e in list_of_list}]
 
