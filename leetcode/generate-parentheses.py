@@ -7,9 +7,10 @@ class Solution:
             return []
         if n < 2:
             return ["()"]
-        prev = self.generateParenthesis(n - 1)
-        rets = {'(' + e + ')' for e in prev}
-        for e in prev:
-            for i in range(len(prev)):
+        rets = set()
+        m = (n - 1) * 2
+        for e in self.generateParenthesis(n - 1):
+            rets.add('(' + e + ')')
+            for i in range(m):
                 rets.add(e[:i] + "()" + e[i:])
         return rets
