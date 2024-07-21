@@ -2,12 +2,8 @@
 
 bool isIsomorphic(unsigned char* s, unsigned char* t) {
 
-    unsigned char convert1[256];
-    unsigned char convert2[256];
-    for (int i = 0; i < 256; i++){
-        convert1[i] = 0;
-        convert2[i] = 0;
-    }
+    unsigned char convert1[128];
+    unsigned char convert2[128];
 
     while (*s != '\0') {
         unsigned char x = *s;

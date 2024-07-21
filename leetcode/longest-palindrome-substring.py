@@ -1,5 +1,5 @@
 class Solution:
-    def is_palindrome(self, s : str) -> bool:
+    def is_palindrome(self, s: str) -> bool:
         n = len(s)
         for i in range(0, len(s)//2):
             if s[i] != s[n - i - 1]:
@@ -9,7 +9,6 @@ class Solution:
     def longestPalindrome(self, s: str) -> str:
         odds = [(i, i) for i, _ in enumerate(s)]
         evens = [(i, i + 1) for i in range(len(s) - 1) if s[i] == s[i + 1]]
-        i = 1
         n = len(s)
         s_odds = []
         s_evens = []
