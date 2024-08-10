@@ -1,9 +1,7 @@
 class Solution:
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        kv = {}
-        for s in strs:
-            try:
-                kv["".join(sorted(s))] += [s]
-            except KeyError:
-                kv["".join(sorted(s))] = [s]
-        return kv.values()
+    def groupAnagrams(self, strs):
+        ret = {}
+        for e in strs:
+            f = "".join(sorted(e))
+            ret[f] = ret[f] + [e] if f in ret else [e]
+        return list(ret.values())
