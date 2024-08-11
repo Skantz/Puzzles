@@ -1,5 +1,5 @@
 class Solution:
-    def minStoneSum(self, piles: List[int], k: int) -> int:
+    def minStoneSum(self, piles, k: int) -> int:
         from queue import PriorityQueue
         q = PriorityQueue()
         for i, e in enumerate(piles):

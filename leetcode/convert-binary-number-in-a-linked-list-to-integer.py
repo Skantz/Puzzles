@@ -1,5 +1,5 @@
 class Solution:
-    def getDecimalValue(self, head: ListNode) -> int:
+    def getDecimalValue(self, head) -> int:
         s = ""
         while head:
             s = s + str(head.val)

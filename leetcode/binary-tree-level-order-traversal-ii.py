@@ -1,5 +1,5 @@
 class Solution:
-    def levelOrderBottom(self, root: Optional[TreeNode]) -> List[List[int]]:
+    def levelOrderBottom(self, root):
         if not root:
             return []
         s = [root]

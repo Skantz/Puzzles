@@ -1,5 +1,5 @@
 class Solution:
-    def findPoisonedDuration(self, timeSeries: List[int], duration: int) -> int:
+    def findPoisonedDuration(self, timeSeries, duration: int) -> int:
         if timeSeries == []:
             return 0
         n1 = timeSeries[0]
