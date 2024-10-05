@@ -1,3 +1,3 @@
 class Solution:
-    def minBitFlips(self, start: int, goal: int) -> int:
-        return bin(start ^ goal).count("1")
+    def minBitFlips(self, x: int, y: int) -> int:
+        return (x ^ y).bit_count()

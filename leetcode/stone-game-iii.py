@@ -6,7 +6,6 @@ class Solution:
         self.n = len(xs)
         self.xs = xs
         x = self.stone_game_iii(0, False)
-        print(x)
         if x < 0:
             return "Bob"
         if x < 1:

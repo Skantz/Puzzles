@@ -11,5 +11,4 @@ class Solution:
             return(x[0] + flatten(x[1:]))
         v = flatten(m)
         v.sort()
-        print(v)
         return v[k]

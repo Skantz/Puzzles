@@ -1,5 +1,5 @@
 class Solution: # A000170
-    def totalNQueens(self, n: int) -> List[List[str]]:
+    def totalNQueens(self, n: int):
         ans = {0 : 1,
                1 : 1,
                2 : 0,

@@ -1,5 +1,5 @@
 class Solution:
-    def findDuplicates(self, nums: List[int]) -> List[int]:
+    def findDuplicates(self, nums):
         output = [0 for _ in range(len(nums))]
         for e in nums:
             if output[e - 1] != 0:

@@ -22,6 +22,4 @@ class Solution:
             i += 1
             if len(st) < i + 1:
                 break
-        print(st)
-        print(removes)
         return sum(e * (i + 1) for i, e in enumerate([f for j, f in enumerate(st) if j not in removes]))

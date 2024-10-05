@@ -1,5 +1,5 @@
 class Solution:
-    def longestWord(self, words: List[str]) -> str:
+    def longestWord(self, words) -> str:
         zet = set(words)
         words.sort() #lexiographic ties
         maxx_n = 0

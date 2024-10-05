@@ -1,5 +1,5 @@
 class Solution:
-    def maxScore(self, grid: List[List[int]]) -> int:
+    def maxScore(self, grid) -> int:
         if not grid or not grid[0]:
             return 0
         n = len(grid)
@@ -28,5 +28,4 @@ class Solution:
         for r in costgrid:
             for e in r:
                 maxx = max(maxx, e)
-        print(costgrid)
         return maxx

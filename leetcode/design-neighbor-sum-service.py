@@ -17,7 +17,6 @@ class NeighborSum:
 
     def adjacentSum(self, value: int) -> int:
         (x, y) = self.idx(value)
-        print(x, y)
         s = 0
         g = self.g
         grid = g

@@ -1,5 +1,5 @@
 class Solution:
-    def subArrayRanges(self, nums: List[int]) -> int:
+    def subArrayRanges(self, nums) -> int:
         n = len(nums)
         s = 0
         for i in range(n):

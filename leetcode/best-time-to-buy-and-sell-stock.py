@@ -9,6 +9,7 @@ class Solution:
             for j in range(i + 1, n):
                 maxx = max(maxx, prices[j] - prices[i])
         return maxx
+
     def maxProfit(self, prices: List[int]) -> int:
         n = len(prices)
         maxx = 0

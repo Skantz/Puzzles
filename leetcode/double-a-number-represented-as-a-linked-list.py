@@ -7,7 +7,6 @@ class Solution:
             head = head.next
         if not n:
             return None
-        print(n)
         n = str(int(n) * 2)
         head = None
         prev = ListNode(int(n[0]))

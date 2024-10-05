@@ -1,5 +1,5 @@
 class Solution:
-    def isPalindrome(self, head: Optional[ListNode]) -> bool:
+    def isPalindrome(self, head) -> bool:
         nodes = []
         while head: #only 10**5 nodes max
             nodes.append(head.val)

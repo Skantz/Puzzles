@@ -1,5 +1,5 @@
 class Solution:
-    def addSpaces(self, s: str, spaces: List[int]) -> str:
+    def addSpaces(self, s: str, spaces) -> str:
         spaces = set(spaces)
         rets = []
         i = 0
@@ -15,5 +15,4 @@ class Solution:
             i += 1
         if cur:
             rets.append(cur)
-        print(rets)
         return "".join(["".join(e) for e in rets])

@@ -1,17 +1,19 @@
+from random import randint
+
+
 class NaiveSolution:
-    from random import randint
-    def __init__(self, nums: List[int]):
-        self.nums=nums
+    def __init__(self, nums):
+        self.nums = nums
 
     def pick(self, target: int) -> int:
         n = self.nums.count(target)
         m = randint(0, n - 1)
         return [i for i, n in enumerate(self.nums) if n == target][m]
 
+
 class Solution:
-    from random import randint
-    def __init__(self, nums: List[int]):
-        self.nums=nums
+    def __init__(self, nums):
+        self.nums = nums
         self.idxs = {}
         for i, e in enumerate(nums):
             try:

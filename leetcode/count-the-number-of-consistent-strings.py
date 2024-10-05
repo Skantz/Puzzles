@@ -1,3 +1,3 @@
 class Solution:
-    def countConsistentStrings(self, allowed: str, words: List[str]) -> int:
-        return len([w for w in words if all(e in allowed for e in w)])
+    def countConsistentStrings(self, allowed: str, words) -> int:
+        return sum(1 for e in words if set(e) - set(allowed) == set())
